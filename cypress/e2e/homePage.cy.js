@@ -10,4 +10,16 @@ describe('the connected shop', () => {
     openSite.visit();
     cy.on('uncaught:exception', (err, runnable) => { return false; })
   })
+  it('Check Home Page and Header elements', () => {
+     homePage.checkTitleHomePage();
+     homePage.checkTitleHomePage();
+     header.checkHeaderExisted();
+     header.checkLogoTransparent();
+     header.checkLogoPrimary();
+     header.checkLogoUrl();
+     header.checkMenu();
+     header.checkMenuItems();
+     header.checkAccountSearchCart();
+
+  })
 })
