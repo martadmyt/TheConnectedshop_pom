@@ -20,6 +20,7 @@ describe('the connected shop', () => {
      header.checkMenu();
      header.checkMenuItems();
      header.checkAccountSearchCart();
+    
 
   })
 })
