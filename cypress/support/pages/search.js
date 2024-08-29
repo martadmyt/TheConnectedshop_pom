@@ -48,14 +48,32 @@ class Search{
     checkSearchLink(){
         cy.contains(this.searchLinkElement)
            .should('exist')
-           .and('be.visible')
+           .and('have.attr', 'href', '/search')
+           .and('be.visible');
+           return this;
+       }
+
+       checkSearchLink1(){
+        return cy.contains(this.searchLinkElement);
+           
        }
    
     checkSearchLinkClick(){
-        cy.contains(this.searchLinkElement)
-          .and('have.attr', 'href', '/search') 
+        cy.contains(this.searchLinkElement) 
           .click()
        }
+
+    checkSearchIcon(){
+        cy.get('.Search__InputIconWrapper > .hidden-phone')
+        .should('be.visible')
+        .and('exist');
+    }
+
+    checkSearchPlaceholder(){
+        cy.get(this.searchInput)
+        .should('have.attr', 'placeholder', 'Search...')
+        .and('have.attr', 'type', 'search')
+    }
 
     checkEnteringTextInSearch(){
         cy.get(this.searchInput)
@@ -124,9 +142,14 @@ class Search{
            .and('be.visible')
        }
 
+    checkSearchLinkExist(){
+        cy.contains(this.searchLinkElement)
+          .should('have.attr', 'href', '/search') 
+          
+       }
+
     checkSearchLinkClick(){
         cy.contains(this.searchLinkElement)
-          .and('have.attr', 'href', '/search') 
           .click()
        }
 
@@ -139,16 +162,7 @@ class Search{
         cy.get(this.searchNoResultsTitle)
           .should('exist')
           .and('contain', 'No results could be found')
-    }
-
-    
-
-    
-    }
-
-    
-
-
-
+    } 
+}
 
 export default Search;

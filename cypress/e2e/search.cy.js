@@ -11,7 +11,10 @@ beforeEach(() => {
 })
 
 it('Check Search Link Element', () => {
-    search.checkSearchLink();
+   // search.checkSearchLink();
+    search.checkSearchLink1()
+          .should('be.visible');
+    search.checkSearchPlaceholder();
     search.checkSearchLinkClick();
     search.checkEnteringTextInSearch();
     search.checkSearchQtyTitle();
@@ -22,12 +25,15 @@ it('Check Search Link Element', () => {
     search.checkProductReviewText();
     search.checkProductPrice();
     search.checkViewAllButton();
+    search.checkSearchLinkExist();
+    search.checkSearchIcon();
+    
+})
+
+it('Check no results found', () => {
+    search.checkSearchLinkClick();
     search.checkEnteringNegativeTextInSearch();
     search.checkNoResultsTitle();
-    
-    
-
-    
-
+ 
 })
 })
