@@ -157,12 +157,26 @@ class ProductPage {
     cy.get(this.qtyField)
       .clear();
     }
+ 
+   //Scroll to top
+   checkScrolltoTop(){
+    cy.scrollTo('top');
+   }
 
-    // //check typing value in the qty field
-    // checkQtyFieldType(){
-    // cy.get(this.qtyField)
-    //   .type('9');
-    // }
+   //check click value in the qty field
+    checkQtyFieldClick(){
+    cy.get(this.qtyField)
+      .click();
+    }
+    
+    //check typing value in the qty field
+    checkQtyFieldType(){
+    cy.get(this.qtyField)
+      .scrollIntoView()
+      .type('9', {force:true});
+      cy.get('.Header__Wrapper')
+      .invoke('css', 'display', 'block');
+    }
  
     //check add to Cart Button
     ckeckAddToCartButton(){
