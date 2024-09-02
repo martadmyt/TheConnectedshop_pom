@@ -16,21 +16,18 @@ describe('the connected shop', () => {
         productPage.checkImageGallery();
         productPage.checkMedia();
         productPage.checkSliderPoints();
-        productPage.checkProductPrice();
-        
-      })
+        productPage.checkProductPrice();    
+    })
        
       it('Check review', () => {
         productPage.checkReviewText();
         productPage.checkReviewStars();
         productPage.checkReviewStarsClick();
-
-    })
+     })
 
       it('Check color option', () => {
         productPage.checkColorOprion();
         productPage.checkColorOptiionClick();
-
     })
 
       it('Check qty', () => {
@@ -41,7 +38,9 @@ describe('the connected shop', () => {
         productPage.checkDecreaseButtonClick();
         productPage.checkQtyField();
         productPage.checkQtyFieldClear();
-       // productPage.checkQtyFieldType();
+        productPage.checkScrolltoTop();
+        productPage.checkQtyFieldClick();
+        productPage.checkQtyFieldType();
     })
 
       it('Check Add to Cart', () => {
