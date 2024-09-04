@@ -96,7 +96,7 @@ checkProductNameClick(){
       .click()
 }
 
- //Check the increasing quantity button
+ //Check the increasing quantity button test
  checkIncreaseButton(){
     cy.get(this.increaseQty)
       .should('exist')
