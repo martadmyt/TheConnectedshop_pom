@@ -122,6 +122,7 @@ checkProductNameClick(){
       .click();
     }
 
+    
     //Can't pass tests:
     // //check the qty field is present
     // checkQtyField(){

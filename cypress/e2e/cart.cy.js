@@ -35,6 +35,8 @@ describe('the connected shop', () => {
         cart.checkDecreaseButtonClick();
         
     })
+
+    
     // it('Check the qty field entering', () => {
     //     cart.checkQtyField();
     //     cart.checkQtyFieldClear();
@@ -51,4 +53,5 @@ describe('the connected shop', () => {
         cart.checkCloseButton();
         cart.checkCloseButtonClick();
     })
+
 })
