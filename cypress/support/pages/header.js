@@ -1,4 +1,5 @@
 class Header{
+
     checkHeaderExisted(){
     cy.get('.Header__Wrapper')
       .should('exist')
@@ -92,5 +93,8 @@ class Header{
             cy.get('.Header__CartCount')
               .should('exist'); });
     }
+
+    
 }
+
 export default Header;

@@ -36,7 +36,7 @@ describe('the connected shop', () => {
         
     })
 
-    
+
     // it('Check the qty field entering', () => {
     //     cart.checkQtyField();
     //     cart.checkQtyFieldClear();

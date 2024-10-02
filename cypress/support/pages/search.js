@@ -169,12 +169,14 @@ class Search{
         cy.contains(this.searchLinkElement)
            .should('exist')
            .and('have.attr', 'href', '/search')
+           .and('be.visible');
         return this; // Підтримка ланцюжкових викликів
     }
 
     // Перевіряємо клік по посиланню на пошук
     checkSearchLinkClick(){
-        cy.contains(this.searchLinkElement).click();
+        cy.contains(this.searchLinkElement)
+          .click();
         return this;
     }
 

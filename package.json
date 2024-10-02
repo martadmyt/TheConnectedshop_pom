@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/register": "^7.24.6",
+    "@cucumber/cucumber": "^11.0.0",
+    "cucumber": "^6.0.7"
+  }
+}
