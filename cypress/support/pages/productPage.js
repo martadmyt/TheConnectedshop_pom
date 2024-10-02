@@ -174,7 +174,7 @@ class ProductPage {
     cy.get(this.qtyField)
       .scrollIntoView()
       .type('9', {force:true});
-      cy.get('.Header__Wrapper')
+    cy.get('.Header__Wrapper')
       .invoke('css', 'display', 'block');
     }
  
